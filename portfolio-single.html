@@ -1,0 +1,493 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Awaiken" />
+    <!-- Page Title -->
+    <title>zerooneZ</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <!-- Google Fonts Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <!-- SlickNav Css -->
+    <link href="css/slicknav.min.css" rel="stylesheet" />
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- Font Awesome Icon Css-->
+    <link href="css/all.css" rel="stylesheet" media="screen" />
+    <!-- Animated Css -->
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Magnific Popup Core Css File -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- Main Custom Css -->
+    <link href="css/custom-ar.css" rel="stylesheet" media="screen" />
+
+    <!-- dark mode  Css -->
+    <link href="css/darkMode.css" rel="stylesheet" media="screen" />
+  </head>
+
+  <body class="tt-magic-cursor">
+    <!-- Preloader Start -->
+    <div class="preloader">
+      <div class="loading-container">
+        <div class="loading"></div>
+        <div id="loading-icon"><img src="images/favicon.png" alt="" /></div>
+      </div>
+    </div>
+    <!-- Preloader End -->
+    <!-- Magic Cursor Start -->
+    <div id="magic-cursor">
+      <div id="ball"></div>
+    </div>
+    <!-- Magic Cursor End -->
+    <!-- Header Start -->
+    <header class="main-header">
+      <div class="header-sticky">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <!-- Logo Start -->
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logoH.png" alt="Logo" />
+            </a>
+            <!-- Logo End -->
+            <!-- Main Menu Start -->
+            <div class="collapse navbar-collapse main-menu">
+              <div class="nav-menu-wrapper">
+                <ul class="navbar-nav mr-auto" id="menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">الرئيسية</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="services.html">الخدمات</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">معرض الأعمال</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blog.html">الأخبار</a>
+                  </li>
+                  <li class="nav-item highlighted-menu">
+                    <a class="nav-link" href="contact-us.html"> تواصل معنا </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Let’s Start Button Start -->
+              <div class="header-btn d-inline-flex">
+                <a href="contact-us.html" class="btn-default"> تواصل معنا </a>
+              </div>
+              <!-- Let’s Start Button End -->
+            </div>
+
+            <!-- start  dark mode -->
+            <button
+              id="dark-mode-toggle"
+              class="dark-mode-toggle"
+              aria-label="toggle dark mode"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                class="theme-icon sun-icon"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0"
+                y="0"
+                viewBox="0 0 682.667 682.667"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve"
+              >
+                <g>
+                  <g fill="#FFD844">
+                    <path
+                      d="M320 0c-10.355 0-18.75 8.395-18.75 18.75V79c0 10.355 8.395 18.75 18.75 18.75s18.75-8.395 18.75-18.75V18.75C338.75 8.395 330.355 0 320 0zM120.242 93.727c-7.316-7.32-19.191-7.32-26.512 0-7.324 7.324-7.324 19.195 0 26.515l42.602 42.606c7.324 7.324 19.195 7.324 26.516 0 7.324-7.32 7.324-19.196 0-26.516zM136.324 477.156 93.72 519.762c-7.32 7.324-7.32 19.191 0 26.52 7.328 7.32 19.195 7.32 26.52 0l42.605-42.606c7.32-7.324 7.32-19.192 0-26.52-7.328-7.32-19.196-7.316-26.52 0zM320 542.25c-10.355 0-18.75 8.395-18.75 18.75v60.25c0 10.355 8.395 18.75 18.75 18.75s18.75-8.395 18.75-18.75V561c0-10.355-8.395-18.75-18.75-18.75zM97.75 320c0-10.355-8.395-18.75-18.75-18.75H18.75C8.395 301.25 0 309.645 0 320s8.395 18.75 18.75 18.75H79c10.355 0 18.75-8.395 18.75-18.75zm0 0"
+                      fill="#FFD844"
+                      opacity="1"
+                      data-original="#ffd844"
+                    ></path>
+                  </g>
+                  <path
+                    fill="#FFF16C"
+                    d="M320 479.336c-87.855 0-159.336-71.48-159.336-159.336S232.144 160.664 320 160.664 479.336 232.144 479.336 320 407.856 479.336 320 479.336zm0 0"
+                    opacity="1"
+                    data-original="#fff16c"
+                  ></path>
+                  <path
+                    fill="#FFD844"
+                    d="M479.336 320c0-87.855-71.48-159.336-159.336-159.336v318.672c87.855 0 159.336-71.48 159.336-159.336zm0 0"
+                    opacity="1"
+                    data-original="#ffd844"
+                  ></path>
+                  <path
+                    fill="#FFA800"
+                    d="m503.676 162.844 42.605-42.61c7.32-7.32 7.32-19.187 0-26.515-7.328-7.32-19.195-7.32-26.515 0l-42.61 42.605c-7.316 7.324-7.316 19.192 0 26.52 7.328 7.316 19.196 7.316 26.52 0zM503.668 477.152c-7.32-7.324-19.195-7.324-26.516 0-7.324 7.32-7.324 19.196 0 26.516l42.606 42.605c7.32 7.32 19.191 7.32 26.515 0 7.32-7.324 7.32-19.195 0-26.515zM621.25 301.25H561c-10.355 0-18.75 8.395-18.75 18.75s8.395 18.75 18.75 18.75h60.25c10.355 0 18.75-8.395 18.75-18.75s-8.395-18.75-18.75-18.75zM320 0v97.75c10.355 0 18.75-8.395 18.75-18.75V18.75C338.75 8.395 330.355 0 320 0zM320 542.25V640c10.355 0 18.75-8.395 18.75-18.75V561c0-10.355-8.395-18.75-18.75-18.75zm0 0"
+                    opacity="1"
+                    data-original="#ffa800"
+                  ></path>
+                </g>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                class="theme-icon moon-icon show"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0"
+                y="0"
+                viewBox="0 0 512 512"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve"
+                class=""
+              >
+                <g>
+                  <path
+                    d="M492.533 393.514c-45.591 71.117-125.26 118.288-215.959 118.484-140.513.305-255.888-113.354-257.587-253.857C17.389 125.938 115.61 16.341 243.014.027c2.723-.349 4.497 2.766 2.842 4.956-30.719 40.661-48.931 91.286-48.931 146.177 0 134.063 108.676 242.738 242.738 242.738 17.004 0 33.592-1.744 49.607-5.075 2.689-.559 4.745 2.379 3.263 4.691z"
+                    style=""
+                    fill="#EFDA45"
+                    data-original="#efda45"
+                    class=""
+                  ></path>
+                  <path
+                    d="M489.276 388.819c2.684-.558 4.74 2.373 3.261 4.682C446.851 464.773 366.946 512 276.009 512 134.044 512 18.972 396.917 18.972 254.963c0-56.808 18.424-109.306 49.635-151.86-7.086 23.245-10.961 47.888-11.116 73.419-.867 143.032 114.009 258.635 257.044 258.629 51.831-.002 100.076-15.342 140.436-41.74a240.991 240.991 0 0 0 34.305-4.592z"
+                    style=""
+                    fill="#EDC148"
+                    data-original="#edc148"
+                    class=""
+                  ></path>
+                </g>
+              </svg>
+            </button>
+
+            <!-- End dark mode -->
+
+            <!-- Main Menu End -->
+            <div class="navbar-toggle"></div>
+          </div>
+        </nav>
+        <div class="responsive-menu"></div>
+      </div>
+    </header>
+    <!-- Header End -->
+    <!-- Page Header Start -->
+    <div class="page-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Page Header Box Start -->
+            <div class="page-header-box">
+              <h1 class="text-anime-style-3">عملية أطلس</h1>
+              <nav class="wow fadeInUp" data-wow-delay="0.25s">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+                  <li class="breadcrumb-item"><a href="#">المشاريع</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    تطوير الويب
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <!-- Page Header Box End -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Header End -->
+    <!-- Project Single Page Start -->
+    <div class="page-project-single">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Project Feature Image Start -->
+            <div class="project-feature-image">
+              <figure class="image-anime reveal">
+                <img src="images/project-single.jpg" alt="" />
+              </figure>
+            </div>
+            <!-- Project Feature Image End -->
+          </div>
+          <div class="col-lg-4">
+            <!-- Project Sidebar Start -->
+            <div class="project-sidebar wow fadeInUp" data-wow-delay="0.25s">
+              <!-- About Project Box Start -->
+              <div class="about-project-box wow fadeInUp">
+                <!-- Project Info Box Start -->
+                <div class="project-info-box">
+                  <div class="project-icon">
+                    <img src="images/icon-date.svg" alt="" />
+                  </div>
+                  <p>التاريخ</p>
+                  <h3>10 April 2024</h3>
+                </div>
+                <!-- Project Info Box End -->
+                <!-- Project Info Box Start -->
+                <div class="project-info-box">
+                  <div class="project-icon">
+                    <img src="images/icon-client.svg" alt="" />
+                  </div>
+                  <p>العميل</p>
+                  <h3>شركة 3M</h3>
+                </div>
+                <!-- Project Info Box End -->
+                <!-- Project Info Box Start -->
+                <div class="project-info-box">
+                  <div class="project-icon">
+                    <img src="images/icon-website.svg" alt="" />
+                  </div>
+                  <p>صفحة الويب</p>
+                  <h3>www.zerooneZ.com</h3>
+                </div>
+                <!-- Project Info Box End -->
+                <!-- Project Info Box Start -->
+                <div class="project-info-box">
+                  <div class="project-icon">
+                    <img src="images/icon-location-1.svg" alt="" />
+                  </div>
+                  <p>الموقع</p>
+                  <h3>الامارات العربية</h3>
+                </div>
+                <!-- Project Info Box End -->
+              </div>
+              <!-- About Project Box End -->
+            </div>
+            <!-- Project Sidebar End -->
+          </div>
+          <div class="col-lg-8">
+            <!-- Project Content Start -->
+            <div class="project-content">
+              <!-- Project Entry Start -->
+              <div class="project-entry">
+                <h2 class="wow fadeInUp" data-wow-delay="0.25s">
+                  نظرة عامة على المشروع
+                </h2>
+                <p class="wow fadeInUp" data-wow-delay="0.5s">
+                  نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في
+                  صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار
+                  للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص
+                  مجموعة من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمثابة
+                  دليل أو مرجع شكلي لهذه الأحرف. خمسة قرون من الزمن لم تقضي على
+                  هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في الطباعةنص
+                  شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في
+                  صناعات المطابع ودور النشر.
+                </p>
+                <p class="wow fadeInUp" data-wow-delay="0.75s">
+                  كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس
+                  عشر عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي
+                  أخذتها من نص، لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه
+                  الأحرف. خمسة قرون من الزمن لم تقضي على هذا النص، بل انه حتى
+                  صار مستخدماً وبشكله الأصلي في الطباعةنص شكلي (بمعنى أن الغاية
+                  هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.
+                </p>
+                <h2 class="wow fadeInUp" data-wow-delay="1s">ملخص المشروع:</h2>
+                <p class="wow fadeInUp" data-wow-delay="1.25s">
+                  كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس
+                  عشر عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي
+                  أخذتها من نص، لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه
+                  الأحرف. خمسة قرون من الزمن لم تقضي على هذا النص، بل انه حتى
+                  صار مستخدماً وبشكله الأصلي في الطباعةنص شكلي (بمعنى أن الغاية
+                  هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.
+                </p>
+                <ul class="wow fadeInUp" data-wow-delay="1.5s">
+                  <li>ملخص سريع عن أهداف المشروع والغرض منه</li>
+                  <li>عملية تتبع العيوب وحلها</li>
+                  <li>النهج أو المنهجية المختارة لعملية التطوير.</li>
+                  <li>اختبار وجودة البرنامج يفي بالمعايير.</li>
+                </ul>
+              </div>
+              <!-- Project Entry End -->
+            </div>
+            <!-- Project Content End -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Project Single Page End -->
+    <div class="project-details-gallery">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Project Gallery Start -->
+            <div class="project-gallery">
+              <div
+                class="project-gallery-items wow fadeInUp"
+                data-wow-delay="0.25s"
+              >
+                <!-- Project Gallery Item Start -->
+                <div class="project-gallery-item">
+                  <a href="images/post-1.jpg">
+                    <figure class="image-anime">
+                      <img src="images/post-1.jpg" alt="" />
+                    </figure>
+                  </a>
+                </div>
+                <!-- Project Gallery Item End -->
+                <!-- Project Gallery Item Start -->
+                <div
+                  class="project-gallery-item wow fadeInUp"
+                  data-wow-delay="0.5s"
+                >
+                  <a href="images/post-2.jpg">
+                    <figure class="image-anime">
+                      <img src="images/post-2.jpg" alt="" />
+                    </figure>
+                  </a>
+                </div>
+                <!-- Project Gallery Item End -->
+                <!-- Project Gallery Item Start -->
+                <div
+                  class="project-gallery-item wow fadeInUp"
+                  data-wow-delay="0.75s"
+                >
+                  <a href="images/post-3.jpg">
+                    <figure class="image-anime">
+                      <img src="images/post-3.jpg" alt="" />
+                    </figure>
+                  </a>
+                </div>
+                <!-- Project Gallery Item End -->
+              </div>
+            </div>
+            <!-- Project Gallery End -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Start -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Mega Footer Start -->
+            <div class="mega-footer">
+              <div class="row">
+                <div class="col-lg-6 col-md-12">
+                  <!-- Footer About Start -->
+                  <div class="footer-about">
+                    <figure>
+                      <img src="images/logoH.png" alt="" />
+                    </figure>
+                    <p>وكالة إبداعية مبنية على لوريم إيبسوم</p>
+                    <ul>
+                      <li><a href="#">Info@zerooneZ.Com</a></li>
+                      <li><a href="#">(+0) 123 456 789</a></li>
+                    </ul>
+                  </div>
+                  <!-- Footer About End -->
+                </div>
+                <div class="col-lg-2 col-md-4">
+                  <!-- Footer Links Start -->
+                  <div class="footer-links">
+                    <h2>الصفحات</h2>
+                    <ul>
+                      <li><a href="index.html">الرئيسية</a></li>
+                      <li><a href="services.html">الخدمات</a></li>
+                      <li><a href="blog.html">الأخبار</a></li>
+                      <li><a href="contact-us.html">تواصل معنا</a></li>
+                      <li><a href="faqs.html">الأسئلة الشائعة</a></li>
+                    </ul>
+                  </div>
+                  <!-- Footer Links End -->
+                </div>
+                <div class="col-lg-2 col-md-4">
+                  <!-- Footer Links Start -->
+                  <div class="footer-links">
+                    <h2>سوشيال ميديا</h2>
+                    <ul>
+                      <li><a href="#">انستغرام</a></li>
+                      <li><a href="#">فيسبوك</a></li>
+                      <li><a href="#">تويتر</a></li>
+                      <li><a href="#">لينكد ان</a></li>
+                    </ul>
+                  </div>
+                  <!-- Footer Links End -->
+                </div>
+                <div class="col-lg-2 col-md-4">
+                  <!-- Footer Links Start -->
+                  <div class="footer-links">
+                    <h2>الخدمات</h2>
+                    <ul>
+                      <li><a href="service-single.html">تطوير الويب</a></li>
+                      <li><a href="service-single.html">تسويق إلكتروني</a></li>
+                      <li><a href="service-single.html">تطوير ألعاب</a></li>
+                      <li>
+                        <a href="service-single.html">تطوير تطبيقات موبايل</a>
+                      </li>
+                      <li><a href="service-single.html">خدمات الشبكات</a></li>
+                    </ul>
+                  </div>
+                  <!-- Footer Links End -->
+                </div>
+              </div>
+            </div>
+            <!-- Mega Footer End -->
+            <!-- Copyright Footer Start -->
+            <div class="footer-copyright">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <!-- Footer Copyright Content Start -->
+                  <div class="footer-copyright-text">
+                    <p>حقوق النشر © 2024 zerooneZ. كل الحقوق محفوظة.</p>
+                  </div>
+                  <!-- Footer Copyright Content End -->
+                </div>
+                <div class="col-lg-6">
+                  <!-- Footer Policy Links Start -->
+                  <div class="footer-policy-links">
+                    <ul>
+                      <li class="highlighted">
+                        <a href="#top">الذهاب أعلى الصفحة</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Footer Policy Links End -->
+                </div>
+              </div>
+            </div>
+            <!-- Copyright Footer End -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Jquery Library File -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Validator js file -->
+    <script src="js/validator.min.js"></script>
+    <!-- SlickNav js file -->
+    <script src="js/jquery.slicknav.js"></script>
+    <!-- Swiper js file -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Counter js file -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Isotop js file -->
+    <script src="js/isotope.min.js"></script>
+    <!-- Magnific js file -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- SmoothScroll -->
+    <script src="js/SmoothScroll.js"></script>
+    <!-- MagicCursor js file -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <!-- Text Effect js file -->
+    <script src="js/SplitText.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <!-- Wow js file -->
+    <script src="js/wow.js"></script>
+    <!-- Main Custom js file -->
+    <script src="js/function-ar.js"></script>
+    <!-- Dark mod js file -->
+    <script src="js/darkMode.js"></script>
+  </body>
+</html>
