@@ -2,9 +2,11 @@
   --primary-color: #15161b;
   --primaryOne-color: #2caa75;
   --primaryTwo-color: #FFFFFF;
+  --primaryBTn-color: #FFFFFF;
   --secondary-color: #f7f8fd;
   --text-color: #b0b2b7;
   --accent-color: #2caa75;
+  --primaryBTn-color: #FFFFFF;
   --primary-color-p: #b0b2b7;
   --white-color: #ffffff;
   --divider-color: #e1e4eb;
@@ -17,6 +19,7 @@
   --primary-color: #FFFFFF;
   --primaryOne-color: #FFFFFF;
   --primaryTwo-color: #2caa75;
+  --primaryBTn-color: #FFFFFF;
   --secondary-color: #0a0808;
   --text-color: #0d0404;
   --accent-color: #2caa75;
@@ -254,7 +257,7 @@ html {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.1em;
-  color: var(--white-color);
+  color: var(--primaryBTn-color);
   background: var(--accent-color);
   text-transform: capitalize;
   padding: 15px 20px 15px 45px;
@@ -276,7 +279,7 @@ html {
   font-weight: 900;
   transition: 0.3s ease-in-out;
   background: transparent;
-  color: var(--white-color);
+  color: var(--primaryBTn-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1989,7 +1992,7 @@ header.main-header .header-sticky.active {
   margin-bottom: 0;
 }
 .services-list-box ul li a {
-  color: var(--text-color);
+  color: var(--primary-color);
   transition: all 0.3s ease-in-out;
 }
 .services-list-box ul li:hover a {
