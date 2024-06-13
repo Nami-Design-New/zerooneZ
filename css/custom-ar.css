@@ -21,7 +21,7 @@
   --primaryTwo-color: #2caa75;
   --primaryBTn-color: #ffffff;
   --secondary-color: #0a0808;
-  --text-color: #0d0404;
+  --text-color: #cecece;
   --accent-color: #2caa75;
   --primary-color-p: #b9b9bc;
   --white-color: #1a1818;
@@ -127,10 +127,6 @@ h6 {
   font-weight: 700;
   color: var(--primary-color);
   line-height: 1.1em;
-}
-
-figure {
-  margin: 0;
 }
 
 img {
@@ -733,7 +729,7 @@ header.main-header .header-sticky.active {
 .hero-slider .swiper-pagination .swiper-pagination-bullet {
   width: 15px;
   height: 15px;
-  background: var(--white-color);
+  background: var(--text-color);
   opacity: 1;
   transition: all 0.3s ease-in-out;
   margin: 0 5px;
@@ -908,7 +904,6 @@ header.main-header .header-sticky.active {
 
 .works-image {
   margin-bottom: 30px;
-  border-radius: 30px;
   overflow: hidden;
 }
 .works-image img {
@@ -1062,6 +1057,10 @@ header.main-header .header-sticky.active {
   margin: 0;
 }
 
+.testimonial-page-slider .swiper-slide {
+  flex: 1 0 0 !important;
+}
+
 .testimonial-slider .swiper-pagination {
   position: relative;
   bottom: 0;
@@ -1070,7 +1069,7 @@ header.main-header .header-sticky.active {
 .testimonial-slider .swiper-pagination .swiper-pagination-bullet {
   width: 16px;
   height: 16px;
-  background: var(--white-color);
+  background: var(--text-color);
   opacity: 1;
   transition: all 0.3s ease-in-out;
   margin: 0 5px;
@@ -1262,9 +1261,10 @@ header.main-header .header-sticky.active {
 .page-header::before {
   content: "";
   position: absolute;
-  background-image: url(../images/page-header-bg-dark.png);
+  background-image: url("../images/page-header-bg.png");
   background-repeat: no-repeat;
   background-position: top right;
+  mix-blend-mode: darken;
   left: 0;
   top: 0;
   width: 100%;
@@ -1533,7 +1533,7 @@ header.main-header .header-sticky.active {
   background-color: var(--secondary-color);
 }
 .clients-testimonials.about-testimonials .testimonial-slider .swiper-pagination .swiper-pagination-bullet {
-  background: var(--secondary-color);
+  background: var(--text-color);
 }
 .clients-testimonials.about-testimonials .testimonial-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
@@ -1575,6 +1575,7 @@ header.main-header .header-sticky.active {
   margin-left: 20px;
   border-radius: 100px;
   transition: 0.4s ease-in-out;
+  cursor: pointer;
 }
 .our-projects-nav ul li:last-child {
   margin-left: 0;
@@ -2111,9 +2112,9 @@ header.main-header .header-sticky.active {
   width: 14px;
 }
 .ask-contact-list a {
+  color: var(--text-color);
   margin: 0;
   font-weight: 700;
-  color: var(--text-color);
   width: calc(100% - 40px);
   margin-right: 10px;
 }
@@ -2169,10 +2170,59 @@ header.main-header .header-sticky.active {
   font-size: 20px;
 }
 
+.ad-box {
+  margin-top: 40px;
+}
+.ad-box p {
+  margin: 0;
+  line-height: 1.6;
+  font-weight: 800;
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.project-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.project-entry .entry-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.project-entry .entry-section .row {
+  display: flex;
+  gap: 16px;
+}
+.project-entry .entry-section .row .section-box {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+  background-color: var(--text-color);
+  border-radius: 8px;
+  color: #0a0808;
+}
+.project-entry .entry-section .row .section-box h5 {
+  color: #0a0808;
+  font-weight: 800;
+  font-size: 28px;
+  margin: 0;
+}
+.project-entry .entry-section .row .section-box span {
+  font-size: 14px;
+  font-weight: normal;
+}
 .project-entry h2 {
   font-size: 40px;
   text-transform: capitalize;
-  margin-bottom: 40px;
+  margin: 0 !important;
+}
+.project-entry p {
+  margin: 0;
+  line-height: 1.6;
 }
 .project-entry ul {
   padding: 0;
@@ -3177,13 +3227,14 @@ header.main-header .header-sticky.active {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  color: var(--text-color);
 }
 .works_link .Btn_link img {
   height: 24px;
 }
 .works_link .Btn_link:hover {
   background-color: var(--primaryOne-color);
-  color: #fff;
+  color: var(--white-color);
 }
 
 #map {

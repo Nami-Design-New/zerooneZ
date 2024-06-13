@@ -23,7 +23,7 @@
   --primaryBTn-color: #ffffff;
 
   --secondary-color: #0a0808;
-  --text-color: #0d0404;
+  --text-color: #cecece;
   --accent-color: #2caa75;
   --primary-color-p: #b9b9bc;
   --white-color: #1a1818;
@@ -141,9 +141,6 @@ h6 {
   font-weight: 700;
   color: $color_2;
   line-height: 1.1em;
-}
-figure {
-  margin: 0;
 }
 img {
   max-width: 100%;
@@ -746,7 +743,7 @@ header.main-header {
     .swiper-pagination-bullet {
       width: 15px;
       height: 15px;
-      background: var(--white-color);
+      background: $color_1;
       opacity: 1;
       transition: all 0.3s ease-in-out;
       margin: 0 5px;
@@ -929,7 +926,6 @@ header.main-header {
 }
 .works-image {
   margin-bottom: 30px;
-  border-radius: 30px;
   overflow: hidden;
   img {
     border-radius: 30px;
@@ -1070,6 +1066,13 @@ header.main-header {
     margin: 0;
   }
 }
+
+.testimonial-page-slider {
+  .swiper-slide {
+    flex: 1 0 0 !important;
+  }
+}
+
 .testimonial-slider {
   .swiper-pagination {
     position: relative;
@@ -1078,7 +1081,7 @@ header.main-header {
     .swiper-pagination-bullet {
       width: 16px;
       height: 16px;
-      background: var(--white-color);
+      background: $color_1;
       opacity: 1;
       transition: all 0.3s ease-in-out;
       margin: 0 5px;
@@ -1271,9 +1274,10 @@ header.main-header {
   &::before {
     content: "";
     position: absolute;
-    background-image: url(../images/page-header-bg-dark.png);
+    background-image: url("../images/page-header-bg.png");
     background-repeat: no-repeat;
     background-position: top right;
+    mix-blend-mode: darken;
     left: 0;
     top: 0;
     width: 100%;
@@ -1543,7 +1547,7 @@ header.main-header {
   .testimonial-slider {
     .swiper-pagination {
       .swiper-pagination-bullet {
-        background: var(--secondary-color);
+        background: $color_1;
       }
       .swiper-pagination-bullet-active {
         background-color: $background-color_3;
@@ -1582,6 +1586,7 @@ header.main-header {
       margin-left: 20px;
       border-radius: 100px;
       transition: 0.4s ease-in-out;
+      cursor: pointer;
       &:last-child {
         margin-left: 0;
       }
@@ -2107,9 +2112,9 @@ header.main-header {
     }
   }
   a {
+    color: $color_1;
     margin: 0;
     font-weight: 700;
-    color: $color_1;
     width: calc(100% - 40px);
     margin-right: 10px;
     span {
@@ -2160,11 +2165,65 @@ header.main-header {
     font-size: 20px;
   }
 }
+
+.ad-box {
+  margin-top: 40px;
+  p {
+    margin: 0;
+    line-height: 1.6;
+    font-weight: 800;
+    font-size: 24px;
+    color: $color_2;
+  }
+}
+
 .project-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  .entry-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .row {
+      display: flex;
+      gap: 16px;
+
+      .section-box {
+        flex: 1 0 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 24px;
+        background-color: $color_1;
+        border-radius: 8px;
+        color: #0a0808;
+
+        h5 {
+          color: #0a0808;
+          font-weight: 800;
+          font-size: 28px;
+          margin: 0;
+        }
+
+        span {
+          font-size: 14px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
   h2 {
     font-size: 40px;
     text-transform: capitalize;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
+    margin: 0 !important;
+  }
+  p {
+    margin: 0;
+    line-height: 1.6;
   }
   ul {
     padding: 0;
@@ -2202,7 +2261,7 @@ header.main-header {
   .project-gallery-item {
     width: calc(33.33% - 14px);
     margin-left: 20px;
-      margin-right: 5px;
+    margin-right: 5px;
 
     &:nth-of-type(3n + 3) {
       margin-left: 0;
@@ -3216,7 +3275,6 @@ header.main-header {
   }
 }
 .project-gallery-items {
-
   .project-gallery-item {
     width: 100%;
     margin-left: 0px;
@@ -3273,19 +3331,17 @@ header.main-header {
     align-items: center;
     justify-content: center;
     gap: 8px;
+    color: $color_1;
     img {
       height: 24px;
     }
     &:hover {
       background-color: var(--primaryOne-color);
-      color: #fff;
+      color: $color_3;
     }
   }
 }
 
-
 #map {
   height: 100%;
 }
-
-
