@@ -3307,7 +3307,6 @@ header.main-header {
       height: 24px;
       aspect-ratio: 3/2;
       border-radius: 4px;
-
     }
     &:hover {
       background-color: var(--primaryOne-color);
@@ -3315,20 +3314,16 @@ header.main-header {
     }
   }
 }
-#map {
-  height: 100%;
-}
 
 
-.dark-mode-toggle{
+.dark-mode-toggle {
   margin-inline-start: 30px;
   padding: 6px;
   border: 0;
   border-radius: 50%;
   background: transparent;
-  svg{
-      height: 35px;
-      width: 35px;
+  svg {
+    height: 35px;
+    width: 35px;
   }
-  
 }

@@ -3240,10 +3240,6 @@ header.main-header .header-sticky.active {
   color: var(--white-color);
 }
 
-#map {
-  height: 100%;
-}
-
 .dark-mode-toggle {
   margin-inline-start: 30px;
   padding: 6px;
