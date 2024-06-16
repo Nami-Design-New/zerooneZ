@@ -3216,11 +3216,9 @@ header.main-header .header-sticky.active {
   padding-top: 16px;
 }
 .works_link .Btn_link {
-  flex: 1 30%;
-  white-space: nowrap;
-  padding: 12px 20px;
-  border-radius: 8px;
-  border: 1px solid var(--primaryOne-color);
+  padding: 8px 20px;
+  border-radius: 100px;
+  border: 1px solid #322f2f;
   background: transparent;
   transition: 0.3s ease all;
   display: flex;
@@ -3228,9 +3226,14 @@ header.main-header .header-sticky.active {
   justify-content: center;
   gap: 8px;
   color: var(--text-color);
+  font-size: 13px;
 }
 .works_link .Btn_link img {
+  width: -moz-fit-content;
+  width: fit-content;
   height: 24px;
+  aspect-ratio: 3/2;
+  border-radius: 4px;
 }
 .works_link .Btn_link:hover {
   background-color: var(--primaryOne-color);
@@ -3239,4 +3242,16 @@ header.main-header .header-sticky.active {
 
 #map {
   height: 100%;
+}
+
+.dark-mode-toggle {
+  margin-inline-start: 30px;
+  padding: 6px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+}
+.dark-mode-toggle svg {
+  height: 35px;
+  width: 35px;
 }/*# sourceMappingURL=custom-ar.css.map */
