@@ -1767,6 +1767,14 @@ header.main-header {
     }
   }
 }
+.dark {
+  .form-control {
+    color: #eeeeee;
+    &::placeholder {
+      color: #8b8b8b;
+    }
+  }
+}
 .help-block.with-errors {
   ul {
     margin-bottom: 0;
@@ -1777,6 +1785,16 @@ header.main-header {
     }
   }
 }
+.dark {
+  .help-block.with-errors {
+    ul {
+      li {
+        color: white;
+      }
+    }
+  }
+}
+
 .google-map {
   padding: 50px 0 100px;
   iframe {
@@ -3314,7 +3332,6 @@ header.main-header {
     }
   }
 }
-
 
 .dark-mode-toggle {
   margin-inline-start: 30px;

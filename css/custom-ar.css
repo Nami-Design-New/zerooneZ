@@ -1774,6 +1774,16 @@ header.main-header .header-sticky.active {
   text-transform: capitalize;
 }
 
+.dark .form-control {
+  color: #eeeeee;
+}
+.dark .form-control::-moz-placeholder {
+  color: #8b8b8b;
+}
+.dark .form-control::placeholder {
+  color: #8b8b8b;
+}
+
 .help-block.with-errors ul {
   margin-bottom: 0;
 }
@@ -1781,6 +1791,10 @@ header.main-header .header-sticky.active {
   color: var(--error-color);
   font-weight: 500;
   font-size: 14px;
+}
+
+.dark .help-block.with-errors ul li {
+  color: white;
 }
 
 .google-map {
